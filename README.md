@@ -1,16 +1,4 @@
-> ⚠️ **This repository has been archived and superseded.**
->
-> Development has moved to **[vbmobile/AMADocModel](https://github.com/vbmobile/AMADocModel)**.
->
-> - **New SPM URL:** `https://github.com/vbmobile/AMADocModel`
-> - **Last frozen version here:** `3.0.0`
-> - **Latest version:** see the new repo's [releases page](https://github.com/vbmobile/AMADocModel/releases).
->
-> Consumers should update their `Package.swift` `.package(url:)` to the new URL. See the new repo's README for migration guidance.
->
-> ---
-
-# AMADocModeliOS
+# AMADocModel
 
 Core data models and types shared across Amadeus document scanning SDKs for iOS.
 
@@ -28,7 +16,7 @@ Core data models and types shared across Amadeus document scanning SDKs for iOS.
 1. Go to **File > Add Package Dependencies**
 2. Enter the repository URL:
    ```
-   https://github.com/vbmobile/AMADocModeliOS
+   https://github.com/vbmobile/AMADocModel
    ```
 3. Select the desired version
 
@@ -38,21 +26,21 @@ Add the dependency to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/vbmobile/AMADocModeliOS")
+    .package(url: "https://github.com/vbmobile/AMADocModel")
 ]
 ```
 
-Then add `AMADocModeliOS` to your target's dependencies:
+Then add `AMADocModel` to your target's dependencies:
 
 ```swift
 .target(
     name: "YourTarget",
     dependencies: [
-        .product(name: "AMADocModeliOS", package: "AMADocModeliOS")
+        .product(name: "AMADocModel", package: "AMADocModel")
     ]
 )
 ```
 
 ## License
 
-See [LICENSE.md](LICENSE.md) for details. Copyright Vision-Box S.A.
+See [LICENSE.md](LICENSE.md) for details. Copyright Amadeus.
